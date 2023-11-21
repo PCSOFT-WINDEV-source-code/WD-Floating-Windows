@@ -1,0 +1,785 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : WIN_FHStandard
+ major_version : 28
+ minor_version : 0
+ type : 2
+ description : ""
+ subtype : 0
+window :
+ name : WIN_FHStandard
+ identifier : 0x28735e1e065b9307
+ internal_properties : CAAAAAgAAADLkvfFmv0rwxdQm1O307hWilTiBqkh9DjnIEEhzHCfupwKj7Tg1bJLJSwhYJHLtLsG4YyOecrNPEM98vD9O6+Jb2Ueyou7QhWnaSzVLwjFWgePCw8POqIVUlfDWQs0hquaiOT67dQ5ROznyRreE4TOYLtzeYdzch9GoorNs97iVcb0E3BJETlRUduJWg6Zv1tV0cYtKH6YhvxS8l8x5r2qkgqAzAQ7Tve+LbHSwlVwKl/6RhN9WwC9T2cd10uCJb0w5xMC1xiTbBuvad4SvRkdPnzwU6YGhlcjJTFbG8yNyyV7LNPCMcEuCGiDKR9X3Z1tnexKgzvek+f7CGvrU3kijtletHIJIfhGo2P2shWhSlhTS6ColYBxPTipZjocv0yKJhzfGWw6WF7yG6PbUzfjsPR1kXoCvZrNHKBMZU++UgOnxpHzGtMJey2OButvsO5h6z/5RJig38QQkBe40hvjXIMriUocAuKNdjXtsTtAao2lNp6x7GPju0/p0ZNsGQNj1f0Wu+4bIXgZ9fKLQlYBIGw4J4Vz6prSKoQn0gqiqlf5Vfx4vDyiYdvIbWQWM9UH0HYpEfYrtwJ81b5ZlTKfte9h5/QVlG05d4xLb54Oole8wPTh5WDpIBwyCry1fU860wrtye8Pzp9ouVOTsKddCP9yJZVc4hE5IdAXEwQ8JkS7C8y0lCdRdGZdumRwyv/7DglcNdVumPEq7kysqp3nPMiKluH1vhlx4ckbxWl/f5/kkLYdqwKrtObZjeoHdZYoMwgxnlEwOjMf
+ properties :
+  width : 235
+  height : 50
+ controls :
+  -
+    name : STC_TITLE
+    identifier : 0x28735e1e065e9307
+    internal_properties : CAAAAAgAAAAaqilZnxd+FrttqLxXuXKSl7SR+LOkncoUGV+BM+jF7C90qTpEsjMMp/NPiPIFj84zHDuiSHbwju2PSw69NodCBrFKExG6ZxnDLNFB9+4Q8t5/G/w8DcqmdUCjyK9dPfct1Nkoh4g5KmD7DUK6rhJjNRCQX+G5lxO8VnGXqaxaI4n/PGw69qdixj0ObpisBVvaU3yqFn+Z79LVuJe5eP96y+wZRH+Hz9TYIi77wHyOpokb8UVcZAQPsCsD0z3eEbmchZuCfNQwggiNl1iKGQTHoOLOikfwVUhQ9i5IOWdYE7AmiVtytNhyyWKu3LuG/KOq5gYXESoyw6a3+abAKAQM8yD6Qg4f+xbCbg==
+    properties :
+     x : 46
+     y : 10
+     width : 157
+     height : 13
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : STC_TEXT
+    identifier : 0x28735e1e065f9307
+    internal_properties : CAAAAAgAAAB5qZ4EAQhM3W8c9UndUL6wRTY08TtZhu+ypWJ2tntQcVMqmkbWH/h+N4dMPUNu/BvpbbBU10FzBtwjk2JW0CYeVjOknNeKRU7mn4bVJwHyXVeTAwTwuSLFQfPLUXa3pHAJ8l7XnoeKa66+sg7kDfW8cIlv61JYL4eojyzNSVqAStpUMYMJQPKiVvQO87ELRA3llk0AyUeFsRiGe6p+2zlNEOQPIXY8zsrsI/aGN9Qv0P+DVL9JowvW3bPN+NbLhWLpmpHlZG2vNlyLX0L9RcAo6tnBFvfeMkgc5fRgoMFlnyZummN5te+JaXoUD6q8D9UOqzF5D0NuM+ZbDTws4dNm+w==
+    properties :
+     x : 46
+     y : 29
+     width : 146
+     height : 13
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : IMG_HELP
+    identifier : 0x28735e1e06619307
+    internal_properties : CAAAAAgAAAAZ+Mh8QzGAMc0HEIFC8r0M1k7VzPSmBQEjmmGI9DE1sJuA9uP7n5Hpq4Hq6rj7hOoqWoS50OWJ0HdLWMyHsKVSD6DmGve/teOAB1wm/9rVO3hc86952w7GdbCWgwTO/nTqqaMqDCxOJf4lUoGpCjcqa3ufgmPfNpYSjoD+ose0BaGyGM3Cmr74/cPsxLF0it01DKMtIEHBaAs3M69q5fH1Kj6u8VCbZWfLAKsS3fP742i4r/1EXo3m+RokkJcRasD+Bxu6yJxi/Y5SgofslK1XIiyVn9/TSsSJjE0I8hv/BLBJOZOq3l+Lko9vidaGhwFcj8/UhyEDwibCUEGUQ5gJw5S8QMJXBytnkeWqG9nrraH207h9az6RK3abLsJJTSO0GpXVf9L2doPKWKOwo4XTvpIFWonNdCHO1GxEVjyVoQANDUd1kdCK4/DoH2dokKZGHuoV72GgcaSqIr1gvFccyIzx/XMuoXTjGEDZB3h3eVX+Txpe1D7UwfYW/btKGB9oZRv/WSt0Zt0Y05KsIFunlmUN6M/RAhRLOCC1RYc5B9C2lRKEwZhAecaWBKMbL16cuxLh
+    properties :
+     x : 8
+     y : 10
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+  -
+    name : BTN_CLOSE
+    identifier : 0x28735e1e06629307
+    internal_properties : CAAAAAgAAAD3QKD4G7oyRMU7PdoCbYZdn+iEM+yjBO0VMzyc7zgY38Yytc+aB7ydMFmUdFn9k1in2eOM6iZakbrrNjrfPSDJFRCS6vZXsSwjhBD22tkpue3MEuAER61NtapUu9JtiyhPNN1jroXzB/7yZExV3os6jEGQCL9tFynLIDAbuGlCaJjCnjaJzzdaZOfDrqVh4teCcgrMUTOTzQrEeRIHfKu1iVhmWN40PdiRns8MVmLQQVbyecwKGnn5u/Vk15CGFvRA3gbXinN8AS/FCpYYjkWrusqgxVrRqHbMcreaurH+JAwJJ9awQYpkOUrsvJjrK8/XmOkBaSMO4FQn3J4aBTB1R+JL36qp7SyMeo9seYT+HRTHrluyfxCWsG6s/J1iYpJHExyZT77lXfFZLzuAQBrmsxume9JdbaZczdBFhheYAGjVFCnAhIU/hukF2M9bf4ylnShagS5TbDzUuqTPRwxhUyHeUZoIjIvEJxZLUuQmXqaIhUnZsOVQbfjt13GNKRidcFGqRgMspHJ7xJEQHZZwtRdBbBWmI1d3sPN3zKPHxd3n+thZo6gQM4ISC4eTV+orQrO0KRuKsryn2u8wzy4TnsFpVFWzSC/qIx/zkcc9ZW4px6yyz0n4fYARMbabeChkFvGEyPCxV2FkXhhdtDyhLJz/j8bl97o3TkC0oQjugCG1Ml585BQsFmf6vaNeEeMtXWh95Lr7rk6wFHzAKy+jW2E7jwiT
+    properties :
+     x : 211
+     y : 25
+     width : 20
+     height : 21
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+         Close()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : PROGRESSBAR
+    identifier : 0x28735e1e06639307
+    internal_properties : CAAAAAgAAADdKDEf1e8djKKqLxN/SIcyPRluh7ssI4lPaSfbef6i2A+GQOVzpexg7ql9uAC9oeKzdX2VI/rpDumhbCxv0qPudkxis23DSpv5kFQBm1PmYQ/kh7yn5hndgII5S0SS3WnlovAG18gj2475e8F+2jBib5xACcg4dcOv2FadLxGblIZi5LK7sg9nYnnK/C+yn7zQwR7Xc4j4nLKtl4ncIerDbEK1DuEMb/n7n00OLLDyiGhvQs1f4JAKZeYLUfNbEGsouPpi/rUiqcO1DHfVH7bNXT8lP7/Qi9y2emWz1w5GKWqXUK7Z+QtjyTWwWi6sp55ZTQh+MPAZrm5ScKj7Tp2LNpgRl9j6Srowy5zSzxrJ6318AfuIJU/LCIcxK8OU5yEpOhB6NUbidnNjyRKri4jXvW0rYedcTnUSjEZJz2aaFdkJhKt3vjvOaiXW5Rs6OUM/FJhI+A==
+    properties :
+     x : 46
+     y : 32
+     width : 107
+     height : 10
+    type : 10
+    code_elements :
+     type_code : 17
+     p_codes : []
+  -
+    name : STC_PROGRESSBAR
+    identifier : 0x28735e1e06649307
+    internal_properties : CAAAAAgAAAAaxOM0cMJ3MRYF6/7KmR9lyV9/assNLo9O7ehEtShZku/6wk2oCMTCwZzmNGtArEMDUZvdNAyTFg8com+0vzfMFebuSQEGETFXsvnX8H0oGv4b/7KAR5DWUPQ+v1RpBPIZBzt213NPhqLHTAv6RL0HHUft5dvgmRXK56fnersm5W/EtZCrdt2xX7HD6PrOCWuX/FMzPlF9Uu5kDO/EO4NB3aFb+JKmPqPzoSiqybP/FQAT3URX6Ct9X4ET8KISkiVHBfQzVpevmKm8d87xATXjfRfn+05yJLPWvhk7auGOgzeRoyTo0wJ7fjR/D+H1NC7s2PHUEThPMZ28yXSGuPgJHA==
+    properties :
+     x : 159
+     y : 32
+     width : 29
+     height : 12
+    type : 3
+    code_elements :
+     type_code : 2
+     p_codes : []
+  -
+    name : BTN_WEB
+    identifier : 0x28735e1e06659307
+    internal_properties : CAAAAAgAAAAFK0+Ds5wjHAQAuP4iEw4ZcO8IvutIkvc51S40zwYY6jZn/Acja15L4RA6YCDWhtaCWziMtzLGzgepyUw4/d+yARJAseceH5iGX6zyD1srn2UwXxlV4SJcpMVdSMK9yDnWpCtUrxOOG88Lb5zuIxwzJrnNL/IYnYOS9M3b7LRo91XEjt36gmUqRoAOQApmaXhZHj46jdbfjaDFkLMRlPtHBki6rY9wDrBkUF4jIjpv+l2FqZDtwiJFdRECpXFQlpwdT27Sw3R5B8JeRao+CjJOPwNK4zv2y3LSfaeN5A3K97BaTwGOE/4BPNDg+rCjESoa+XhVNFPINZSFPievOjA2TKtuRYjbRhMRd04LEt68UXU6E2g2hF5Wcp0LlT7g87cGXuvPFxTdBML04cb6RZy6Sf1d6XuIz68lQ+RMxgH+F9XXMRDv8+sbeVXREvGrCngpKYaD8ybGF5S1Cwqhc1vZ+jnLey52DqUswIbb/xz3nSMHInqj2AL8WEOld1pS5e+4eC1BTl4oZqN7tNosbAuu3R80+hkoratDxANHBVD1pvhOpygoibRArR+WL0s/4vjv16WuFgEbQ8tGtEIpl/xGxnSSKBd/srKxFXeQxfVLqnqPphtGKyb0cHd2qPv9Of+67FNB5fBI1BmDvv+a1nhx6DupcEvcf4sYrGiICFK54bAFLLWtOYujNvXRA3iDEoMlPwNegFjbPyU=
+    properties :
+     x : 46
+     y : 26
+     width : 140
+     height : 18
+    type : 4
+    code_elements :
+     type_code : 4
+     p_codes :
+      -
+        code : |1-
+         
+        type : 14
+      -
+        code : |1-
+         
+         IF gFloatingHelp:sCallbackProcedure <> "" THEN
+         	WHEN EXCEPTION IN
+         		ExecuteProcess(gFloatingHelp:sCallbackProcedure, trtProjectProcedure)		
+         	DO
+         		// No action
+         	END
+         END
+         
+         Close()
+        type : 18
+      -
+        type : 161
+        enabled : false
+  -
+    name : IMG_HELPBCKGRD
+    identifier : 0x28735e1e06609307
+    internal_properties : CAAAAAgAAAAdGO8fukMGKLJVzDrv7H6XKLyFpMeeyXVoCFgNC0hj82bv6c5bcXkPjw4RxlwI1W0GgArZu9m8LKeCYts5WL03sdQGYDIcA52cq7bJ1QkCgV5yOJsIz8io2z2PtAUZadt0rX2rRhNvIYt+ATo7cSIVckG0iUveAE2XzdPcgNdgOzTtAYV2BAUN15ctVJBZPr6arRumgXEol5LeVIrGmbfz558+z1NCnYTszqIyWk/h7mLEhBKZC8QPRg5o1eXl3FuKuFRf1D5Xt4s1J6ww0eYt8VZr/q8VqnkuhplmJsQnIH69DEDqbvJU1tRMMppYBNcMwxPc9QJcIf/0Rq1QrMU2xrO7a27HmNl0ADFWa4RoIXX/3azLcUBfSdFZZ9/LsvPmspDpxhAglMNfwmRvtdz+GMjQ3MmG9WwSw45N1apQHEXWr9ormvvNIWYbW3Jj72OD/7fTPXJ3OzP7XLZEjbRFjMj4LiuYNyAeXXzr8T2Z8MGmdPjJFN8cZiBdZd8uKAT3f15GdURfbrX5daGmMaw9bMUT5lztzIpTl7xQ/umT4Vjj6XecFbollq93drw0woBhp8F/gtk=
+    properties :
+     x : 8
+     y : 10
+     width : 32
+     height : 32
+    type : 8
+    code_elements :
+     type_code : 8
+     p_codes :
+      -
+        type : 18
+        enabled : false
+ menu :
+  name : _Menu
+  identifier : 0x249fe1c8053f3e77
+  internal_properties : CAAAAAgAAAC9auouxN3CiS1UHy69pCHJU2hPQP5aPrxDpuMd+folLnKLDclr4k04UVuUGa0eBjiUure/514NXQqvoA3kcE+ZfkAwZN5wuqf91stOSc7rrooKBe5p25+yGTrLtIh9cUvTSVwZqbm0iR8jS067DZVsr/rbKIf2qwSw5b0tai1hxqUFZkxL3IAJ4aLbMzxeRNbeYxe2gATNFCMeY38BgMEzxLp73ck14CZ1r43ovvpL1z80OL3aUfeKHbCfihfJqrDOO8iqc+h05HVbYos4EhHCLmjs/KDqmIik3JDNSn0=
+  options : []
+ popup_menus :
+  -
+    name : mcFloatingHelp
+    identifier : 0x28735e1e06669307
+    internal_properties : CAAAAAgAAAD3n9n3Zg2XUHIzryf56W72rNKmetfDbYIYAqSTxqSsarxbTUy/C58OC9umfzhzrHb2gAHIkz4JrEqkpBqGU80r1H3u/vFlbHQThjztzk/Ll0iNE8K4SPxZYhDVzBrJwQdwWOMJDV3ZsorZ9jGeDl9B7ehr0ew6Rjcqsqlk2V2tLvO+PEya40+ae9Ej9JWS5dmV8XFr4KsN1sTpHyu9FKV2sg54NajXrkbo8O7ypmf272TnssoUBToI7zBnR4vcgdNe8J/g7wvWI/von2M1VolQJTjkkaJ9yWRvHRZDClfPyZXCdu0H0QLgR7JqT3PloNtC0d6DdWhQTqtaJLiKS0TLtlaXjMPkYgnarsg1cTXvDMbja7exiCQA9iTo13hfT5Iuq/iCv5Pk
+    options :
+     -
+       name : optNoDisplay
+       identifier : 0x28735e1e06679307
+       internal_properties : CAAAAAgAAAAhSk7taYb/PXyz2DXfP+DRdiemfvlwGGPr01TjQMb9T9/fXQrLsL7euXTQcwFbpLxkEHlVKoN5+pYUXSR/c3ab8qeZsxRdhYoJaKJi5WIjH/HSJXwoH5laoPp15aLw3sX63ko2F3/rQ1LvM6O+ykd2A6r4/eDRV17asEEPYI3WEoFnYQSbQuL58QVClQjaC8vDs61nwNA5XzkGV5uOZzffCw4nLy/CjofzBlny7bGRlA//d3to/s1VmIV6R2omRu+opn9w3CEgSwLQpknppq3MGYbkaS3Gq337bMiL0HuIKP0frr6F95/ezT5akl8TVQBKKvMZws+aCAd+2Jy+uh56Dvj6LdJqSXomW/Y5y0HKeYrZtbDiSFqZiYn1FKHEULyK49iNly/kKdyiRx4ej/RJpSCp/Lvc3+z7wZC5lv1fmkaz2LKG
+       code_elements :
+        type_code : 26
+        p_codes :
+         -
+           code : |1-
+            
+            RegistrySetValue(pFloatingHelp.gsRegistryKey, <§$0002§>, 1)
+            Close()
+           type : 32
+    controls : []
+    code_elements :
+     type_code : 26
+     p_codes : []
+ languages :
+  - en-GB
+ message_bar :
+  internal_properties : CAAAAAgAAABXTzfmSRr6y7fOCmCG1xtmuPpwRCG4uxdqQr6lCdtvtYiT78BUg9eo6lVWIyCo9RrXFDPT+dMR6sXWeGwthYuDrEs+heMgzE4/+rXQe1xfJ9uj5twpVotiXhvNk8Pi
+ actionbar : {}
+ code_elements :
+  internal_properties : CAAAAAgAAADDajzk4pAMYnnOftNHxQMJVeX0gDQvkIYkcO9jylZqzNlpw79lcb7wG2vphAyKYnPfcHHXbzMzRra0GtdvjnbdPgdGjzjex3yQYUg45hxsd78gnEoQuerKoM0FywPmJgNnHgOWxQJzZ3ZOpmiQYCaMahqIXISIA9mHZI8HAyVqM+CHcw3slw==
+  type_code : 1
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAADyZXM2VRo+SZh6DMblh0ZX1H39I7I2M6K6qghdgar4tUKQxxI+PyLYkXHx61yUNrkblBClFj/KYgKlHzdF+ixNUP5UJ8sBFSNDJVzO80SF7iTmzOWcqnjVtQFoYWvEScbGBdEtsE6yz3ECmoaKyvKPnOuEfaybY5tGtG/7tenUzZiV7rqHgTPwGhP3Bs2Rz6e2
+     code : |1-
+      // Syntax:
+      //WIN_FHStandard ( [<gnType> [, <gsTitle> [, <gsText> [, <gsIcon> [, <gbTransparentIcon> [, <gbSoundEnabled> [, <gnClosingTimeout> [, <gnParentWindow> [, <gsProcedure>]]]]]]]]])
+      //
+      // Parameters:
+      //	gFloatingHelp: FloatingHelp variable
+      // Return value:
+      // 	None
+      
+      PROCEDURE WIN_FHStandard(gFloatingHelp is FloatingHelp)
+      
+      // Variables global to the window
+      gbAnimation is boolean = True
+      gbMove is boolean
+      gbFirstMove is boolean
+      gnMouseY is int
+      gsWindowName is string
+      gnYWin is int
+      gnYMIN is int
+      gnYMAX is int = SysYRes
+      gnXMIN is int = SysXRes
+      gnNBLOCK is int
+      
+      
+      // Checks whether the window can be opened
+      IF RegistryQueryValue(pFloatingHelp.gsRegistryKey, <§$0002§>) = 1 THEN
+      	// Close immediately
+      	gbAnimation = False
+      	Close()
+      END
+      
+      // Points to the proper plane according to the type
+      MySelf..Plane = gFloatingHelp:nType
+      
+      // Display Bounds
+      _InitDisplayBounds()
+      
+      // Position saved
+      gnNBLOCK = RegistryQueryValue(pFloatingHelp.gsRegistryKey, "BlockLastY")
+      IF gnNBLOCK = 0 THEN gnNBLOCK = 88 // 88 pixels above the max Y bound.
+      IF gnYMAX - gnNBLOCK < gnYMIN THEN
+      	gnNBLOCK = 88
+      END
+      
+      // Forbids the gain of focus
+      API("user32", "SetWindowLongA", Handle(), -20, 0x08000000)
+      
+      // Initial display
+      gsWindowName = MySelf..Name
+      MySelf..X = gnXMIN 
+      MySelf..Y = gnYMAX - gnNBLOCK
+      MySelf..Width = 0
+      MySelf..Opacity = 0
+      MySelf..Visible = True
+      
+      Multitask()
+      
+      ControlsInit()
+      
+      // The 'Close' button has the focus
+      ScreenFirst(BTN_CLOSE)
+   -
+     internal_properties : CAAAAAgAAAAzBSpR0a875r/8v9qcZxhZG23s3ChtMxNHqpt4yAWPl5EUNkAbuFkN2DMTVHA+xS7/Cmqg0BQm6LpBpPmUXCrIYYW4zwmYPAygwr5Iqm5kbl/tbFcex4oLzMyZMCvNY0h5iduV9nTyenxej9Q=
+     code : |1-
+      // Moves the window in the foreground (above the other windows)
+      WinStatus(MySelf, NoFocus)
+      WinStatus(MySelf, AboveAll)
+      
+      // Makes the window appear
+      ThreadExecute(DateSys + TimeSys, threadNormal, _Appear)
+      
+      // If the window is not a Progress Bar
+      IF gFloatingHelp:nType <> afProgBar THEN
+      	// If the closing time-out of the window is greater than 0 (specified time-out)
+      	IF gFloatingHelp:nClosingTimeout > 0 THEN
+      		// If a time-out is specified, closes the window after the time-out
+      		DelayBeforeClosing(MyWindow..Name, BTN_CLOSE, gFloatingHelp:nClosingTimeout * 100)
+      	END
+      END
+      
+      // If the sound is enabled, plays the sound
+      IF gFloatingHelp:bSoundEnabled THEN Sound(<§$0006§>)
+     type : 34
+   -
+     type : 180
+     enabled : false
+   -
+     type : 230
+     enabled : false
+   -
+     code : |1-
+      // Saves the position of the window
+      RegistrySetValue(pFloatingHelp.gsRegistryKey, <§$0003§>, gnYMAX - MyWindow..Y)
+      
+      // Makes the window disappear
+      IF gbAnimation THEN
+      	IF MySelf..Opacity > 0 THEN _Disappear
+      END
+     type : 2
+   -
+     type : 11
+   -
+     type : 12
+   -
+     type : 17
+   -
+     type : 13
+   -
+     internal_properties : CAAAAAgAAADSV3pKEcaXwr4lg2DGqazTDjpGCBfb96YWHS21V3lB3f5tGA82ZaS/MXYg3spEj03f1aVZPgpdrMQJGQ0Kk36pkZ0ds64hs27JudjgvBJirXHZW3w6cTF4B/xZI0DLmVDwsoP8bdoRq6OOu6GibuEusQ81w9Syey49mjFqH/t38yDisr4l0PIUdVlFqXeb39eCiBINjO5yg2wG+oZ9aOyXnZI6rl+2XQ6qGBrXcJt2GPXwHUitNg==
+     code : |1-
+      // Defines a variable used to store the window rectangle
+      Area is composed of
+      	L, T, R, B are int
+      END
+      
+      // If a move is in progress
+      IF gbMove THEN	
+      	
+      	// Retrieves the screen DC
+      	nDC is int = API("user32", "GetDC", 0)
+      	
+      	// Retrieves the mouse position
+      	nY is int = MouseYPos
+      	
+      	// Calculates the move performed
+      	nStartY is int = nY - gnMouseY
+      	
+      	// If it is not the first move
+      	IF gbFirstMove = False THEN
+      		
+      		// Defines the window rectangle
+      		Area.L = MyWindow..X
+      		Area.R = Area.L + MyWindow..Width
+      		Area.T = gnYWin
+      		Area.B = Area.T + MyWindow..Height
+      		
+      		// Erases the focus rectangle previsouly drawn
+      		API("user32", "DrawFocusRect", nDC, &Area)
+      		
+      	END
+      	
+      	// It is not the first move anymore
+      	IF gbFirstMove = True THEN gbFirstMove = False
+      	
+      	// If the window does not exceed the bounds (XMIN and YMIN)
+      	IF NOT (True IN (MyWindow..Y + nStartY < gnYMIN, MyWindow..Y + MyWindow..Height + nStartY > gnYMAX)) THEN
+      		// Applies the move
+      		gnYWin = MyWindow..Y + nStartY
+      	END
+      	
+      	// Defines the window rectangle
+      	Area.L = MyWindow..X
+      	Area.R = Area.L + MyWindow..Width
+      	Area.T = gnYWin
+      	Area.B = Area.T + MyWindow..Height
+      	
+      	// Draws a focus rectangle to display the new position of the window
+      	API("user32", "DrawFocusRect", nDC, &Area)
+      	
+      	// Frees the screen DC
+      	API("user32", "ReleaseDC", 0, nDC)
+      	
+      END
+     type : 66048
+   -
+     code : |1-
+      // If a timeout is found
+      IF gFloatingHelp:nClosingTimeout > 0 THEN
+      	// Cancels the timeout
+      	DelayBeforeClosing(MyWindow..Name, BTN_CLOSE, 0)
+      END
+      
+      // Saves the position of the window
+      gnYWin = MyWindow..Y
+      // Saves the position of the mouse
+      gnMouseY = MouseYPos
+      
+      // Indicates that it is the first move
+      gbFirstMove = True
+      
+      // Directs all the mouse events to the window
+      CursorCapture(True, Handle())
+      
+      // Indicates that a move is in progress
+      gbMove = True
+     type : 66049
+   -
+     internal_properties : CAAAAAgAAAAD0OygFHdRXUCK/3twUMgpFBkFx7ws3LmKFaBZDI+N3qcXWXbSauuSQ0K/ELduUrMgIS07i397uJT9zYHd8d94ItJy7xAekg9ZMVGqk6jA+g+NnwbX0uPaB5vGWcdPJU9ioakiByqPzKFN6VojyMPBMwofdR5ELQ9jw2qAkVxIVxm6I4Ek2UUmMtDed1bRz3AMoV3OrQFTTqm1xNJKAmg=
+     code : |1-
+      
+      // Defines a variable used to store the window rectangle
+      Area is composed of
+      	L, T, R, B are int
+      END
+      
+      // No other move
+      gbMove = False
+      
+      // Applies the position 
+      MyWindow..Y = gnYWin
+      
+      // Cancels the redirection of events
+      CursorCapture(False, Handle())
+      
+      // If the window was moved at least once
+      IF gbFirstMove = False THEN
+      	
+      	// Retrieves the screen DC
+      	nDC is int = API("user32", "GetDC", 0)
+      	
+      	// Defines the window rectangle
+      	Area.L = MyWindow..X
+      	Area.R = Area.L + MyWindow..Width
+      	Area.T = gnYWin
+      	Area.B = Area.T + MyWindow..Height
+      	
+      	// Erases the focus rectangle previously drawn on the screen
+      	API("user32", "DrawFocusRect", nDC, &Area)		
+      	
+      	// Frees the screen DC
+      	API("user32", "ReleaseDC", 0, nDC)
+      	
+      END
+      
+      // Restores the time-out
+      IF gFloatingHelp:nClosingTimeout > 0 THEN
+      	// If a time-out is specified, closes the window after the time-out
+      	DelayBeforeClosing(MyWindow..Name, BTN_CLOSE, gFloatingHelp:nClosingTimeout * 100)
+      END
+     type : 66050
+  procedures :
+   -
+     name : _Appear
+     procedure_id : 1761855362184418055
+     type_code : 14
+     code : |1-
+      // Summary: Displays the floating window
+      
+      PROCEDURE _Appear()
+      
+      nPosX, nOpacity, nStep, nSpeed, nWidth are reals
+      
+      // Positions the window information
+      {gsWindowName, indWindow}..Opacity = 100
+      {gsWindowName, indWindow}..Width = 230
+      {gsWindowName, indWindow}..Width = 0
+      {gsWindowName, indWindow}..Visible = True
+      
+      // Defines a step of 5 to increase the visibility
+      nStep = 5
+      
+      // Defines a variable step to increase the display speed
+      nSpeed = 0.1
+      
+      // Define the initial opacity
+      nOpacity = 100 
+      
+      // Define the start position
+      nPosX = gnXMIN
+      
+      // Define the initial width
+      nWidth = {gsWindowName, indWindow}..Width
+      
+      LOOP	
+      	// Increases the width
+      	nWidth += 5 + nSpeed
+      	// Moves the window accordingly to the left
+      	nPosX = gnXMIN - nWidth
+      	// Reduces the opacity
+      	nOpacity -= nStep 
+      	// Increases the variable step for increasing the speed according to a cosine (that gives a slight leap effect)
+      	nSpeed += Abs(Cos(nPosX)) / 3
+      	
+      	// Applies the modifications
+      	{gsWindowName, indWindow}..X = nPosX		
+      	{gsWindowName, indWindow}..Width = nWidth
+      	{gsWindowName, indWindow}..Opacity = 100-nOpacity
+      	
+      	// If the expected width is reached
+      	IF nWidth >= 230 THEN 
+      		BREAK
+      	END
+      END	
+      
+      // Stop
+      {gsWindowName, indWindow}..DisplayEnabled = False
+      // At this time, the window is not 100% clipped
+      // therefore, the width of the window must be slightly modified and it must be restored to get a perfect clipping
+      {gsWindowName, indWindow}..Width = 234
+      {gsWindowName, indWindow}..Width = 235
+      {gsWindowName, indWindow}..X = gnXMIN - 235
+      {gsWindowName, indWindow}..Opacity = 100
+      {gsWindowName, indWindow}..DisplayEnabled = True	
+      
+      // Redraws the window
+      WinRedraw()
+     type : 458752
+   -
+     name : _Disappear
+     procedure_id : 1761855362184483591
+     type_code : 14
+     code : |1-
+      // Summary: Makes the floating window disappear
+      
+      PROCEDURE _Disappear()
+      
+      nPosX, nOpacity, nStep, nSpeed, nWidth are reals
+      
+      // Defines a step to reduce the visibility
+      nStep = 5
+      // Defines a step to increase the vanishing speed
+      nSpeed = 0.1
+      
+      // Define the initial opacity
+      nOpacity = {gsWindowName, indWindow}..Opacity
+      
+      // Define the start position
+      nPosX = {gsWindowName, indWindow}..X
+      
+      // Define the initial width
+      nWidth = {gsWindowName, indWindow}..Width
+      
+      LOOP	
+      	// Reduces the width
+      	nWidth -= 5 + nSpeed
+      	// Moves the window accordingly to the right
+      	nPosX = gnXMIN - nWidth
+      	// Reduces the visibility
+      	nOpacity -= nStep
+      	// Increases the variable step for increasing the disappearance speed
+      	// (according to a cosine that is used to get a leap effect)
+      	nSpeed += Abs(Cos(nPosX)) / 3
+      	
+      	// Applies the modifications
+      	{gsWindowName, indWindow}..DisplayEnabled = False
+      	{gsWindowName, indWindow}..Width = nWidth
+      	{gsWindowName, indWindow}..X = nPosX
+      	{gsWindowName, indWindow}..Opacity = nOpacity
+      	{gsWindowName, indWindow}..DisplayEnabled = True
+      	
+      	// Exit if the width of the window is null
+      	IF nWidth <= 0 THEN BREAK
+      END
+     type : 458752
+   -
+     name : _InitDisplayBounds
+     internal_properties : CAAAAAgAAACGxzfh17rQLXZ2NzCfddv2OGWqZdoHudA1z1rEuBUgjz7X7TGnY6kYueozYUgcrsmkf7EQitzf4n3t0izpwH9yF00FKpqYTUw1NhSXLWAlqnGOzVSXGq3uLE777C04RYyR7vyv1JEQS/Rwojld
+     procedure_id : 1761855362184549127
+     type_code : 14
+     code : |1-
+      // Summary: Initializes the display bounds of the floating window
+      PROCEDURE _InitDisplayBounds()
+      
+      //
+      // Define the upper and lower bounds for the window display
+      //
+      
+      nOffsetX is int // X offset
+      nOffsetY is int // Y offset
+      stArea is composed of // Display area
+      	L, T, R, B are int
+      END				
+      
+      // Is it a handle?
+      IF TypeVar(gFloatingHelp:vHandleParentWindow) IN (wlHandle, wlInt) THEN
+      	
+      	// Is the handle null?
+      	IF gFloatingHelp:vHandleParentWindow = 0 THEN
+      		
+      		// No action: desktop bounds
+      		gnXMIN = SysXRes
+      		gnYMAX = SysYRes
+      		gnYMIN = 0
+      		
+      		GOTO Output
+      	ELSE
+      		// Is the handle valid?
+      		IF SysValidHandle(gFloatingHelp:vHandleParentWindow) = False THEN
+      			
+      			// Invalid handle: desktop bounds
+      			gnXMIN = SysXRes
+      			gnYMAX = SysYRes
+      			gnYMIN = 0
+      			
+      			GOTO Output
+      			
+      			// The handle is valid, we are now going to retrieve the position of the window and its internal display area 
+      			// (equivalent to WinInHeight() and WinInWidth() with WinOutXPos() and WinOutYPos())
+      		ELSE
+      			
+      			// Retrieves the display area of the window
+      			API("user32", "GetWindowRect", gFloatingHelp:vHandleParentWindow, &stArea)
+      			
+      			// Retrieves the Y position
+      			nOffsetY = stArea.T
+      			
+      			// If the X position is greater than the width of the screen
+      			IF stArea.L + 4 >= SysXRes THEN
+      				// Moves the window display on the second screen
+      				nOffsetX = stArea.L + SysXRes - 4
+      			ELSE
+      				// Retrieves the X position
+      				nOffsetX = - 4
+      			END
+      			
+      			// Calculates the bounds
+      			gnYMIN = nOffsetY + 24
+      			gnYMAX = stArea.B - 4
+      			gnXMIN = stArea.R + nOffsetX
+      		END
+      	END
+      	
+      	GOTO Output
+      END
+      
+      // If the name of a parent window was specified
+      IF gFloatingHelp:sParentWindow <> "" THEN
+      	// If this window exists
+      	IF WinStatus(gFloatingHelp:sParentWindow) <> NotFound THEN
+      		// Defines the upper and lower bounds for moving the window
+      		gnYMIN = WinInYPos(gFloatingHelp:sParentWindow) // Inside Y position of the window
+      		gnYMAX = gnYMIN + WinInHeight(gFloatingHelp:sParentWindow) // Inside height of the window
+      		
+      		// Defines the initial position of the window
+      		gnXMIN = WinOutXPos(gFloatingHelp:sParentWindow) + WinInWidth(gFloatingHelp:sParentWindow)
+      	END
+      END
+      
+      Output :
+      // Checkers
+      IF MyWindow..Y < gnYMIN THEN MyWindow..Y = gnYMIN
+      IF MyWindow..Y > gnYMAX THEN MyWindow..Y = gnYMAX - gnNBLOCK
+      IF MyWindow..X <> gnXMIN THEN MyWindow..X = gnXMIN
+     type : 458752
+   -
+     name : SetProgressBar
+     procedure_id : 1761855362184614663
+     type_code : 14
+     code : |1-
+      // Summary: Positions the value of the progress bar
+      // Syntax:
+      //SetProgBar (<nValue> is int, <nUpperBound> is int)
+      //
+      // Parameters:
+      //	nValue (integer): 	Current value of the progress bar
+      //	nMaxValue (integer): Maximum value of the progress bar. The window will be automatically closed if the value of the progress bar is greater than or equal to the maximum value.
+      // Return value:
+      // 	None
+      
+      PROCEDURE SetProgressBar(LOCAL nValue is int, LOCAL nMaxValue is int)
+      
+      // Applies the upper bound of the progress bar
+      PROGRESSBAR..MaxValue = nMaxValue
+      
+      // Applies the value of the progress bar
+      PROGRESSBAR..Value = nValue
+      
+      // Calculates the percentage of progress
+      // % = (<Value> / 100) * <Upper Bound>
+      STC_PROGRESSBAR = IntegerPart((nValue * 100) / nMaxValue) + <§$000b§>
+      
+      // If the value of the progress bar has reached the upper bound
+      IF PROGRESSBAR..Value >= PROGRESSBAR..MaxValue THEN 
+      	// Closes the window
+      	Multitask(-2)
+      	Close()
+      END
+     type : 458752
+   -
+     name : ControlsInit
+     internal_properties : CAAAAAgAAACeGbAINZ4JqThYl6mWlFueAfZm2i6BZWYC5Gzx6fJSU3xR+wKpjDDxQjoWUP5YuY6i0r7jvsitYxom1Sb0hkx5adLYtHhwjzbgiKJX3zQLeAmGZlj4TTJR3/Qv9zKn376udQaWX2AsV1ueadLbW7YbpPJ4yfdYG8C7OMd7kLC4ZdV/p2VWQUAdy6BisncbjiX3Jo2qZW4=
+     procedure_id : 1761855362184680199
+     type_code : 14
+     code : |1-
+      // Summary: initializes the window controls
+      
+      PROCEDURE ControlsInit()
+      
+      // If an icon is specified
+      IF gFloatingHelp:sIcon <> "" THEN
+      	// Modifies the displayed icon
+      	IMG_HELP = gFloatingHelp:sIcon
+      END
+      
+      // If the icon must be transparent
+      IF gFloatingHelp:bTransparentIcon THEN
+      	// Applies a transparent color to the image background
+      	IMG_HELP..BrushColor = -1
+      	// Makes the shading image invisible
+      	IMG_HELPBCKGRD..Visible = False
+      	
+      	// If the icon must not be transparent
+      ELSE
+      	// Applies a white color to the image background
+      	IMG_HELP..BrushColor = iWhite
+      	// Displays the shading image
+      	IMG_HELPBCKGRD..Visible = True
+      END
+      
+      // The text is truncated if it cannot be entirely displayed
+      SWITCH True
+      
+      	// Standard Mode: the text is truncated (the Ellipse property cannot be used to truncate a multiline text)
+      	CASE gFloatingHelp:nType = afStandard
+      		WHILE TextWidth(STC_TITLE, gFloatingHelp:sText, tMultiline) > STC_TITLE..Width
+      			gFloatingHelp:sText = gFloatingHelp:sText[[TO Length(gFloatingHelp:sText) - 6]] + <§$000c§>
+      		END
+      		
+      	// Link Mode: no action, the Ellipse property does it all
+      	CASE gFloatingHelp:nType = afLink 
+      		
+      	// Progress Bar Mode: no action as the text is not displayed
+      	CASE gFloatingHelp:nType = afProgBar
+      		
+      END
+      
+      // Displays the text in the caption of the Web button and the standard caption
+      BTN_WEB..Caption = gFloatingHelp:sText
+      STC_TEXT = gFloatingHelp:sText
+      // If the static assigned to the text is wider than the control, enables the scroll animation
+      STC_TEXT..Animation = (TextWidth(STC_TEXT, gFloatingHelp:sText) > STC_TEXT..Width)
+      
+      // Displays the title
+      STC_TITLE = gFloatingHelp:sTitle
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : fnAFStandard
+resources :
+ string_res :
+  identifier : 0x12165bdb0032f674
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : This is a long text displayed on several lines
+     index : 0
+   -
+     text :
+      en-GB : Generation
+     index : 1
+   -
+     text :
+      en-GB : DisplayNone
+     index : 2
+   -
+     text :
+      en-GB : BlockLastY
+     index : 3
+   -
+     text :
+      en-GB : user32
+     index : 4
+   -
+     text :
+      en-GB : SetWindowLongA
+     index : 5
+   -
+     text :
+      en-GB : vol1.wav
+     index : 6
+   -
+     text :
+      en-GB : GetDC
+     index : 7
+   -
+     text :
+      en-GB : DrawFocusRect
+     index : 8
+   -
+     text :
+      en-GB : ReleaseDC
+     index : 9
+   -
+     text :
+      en-GB : GetWindowRect
+     index : 10
+   -
+     text :
+      en-GB : "%"
+     index : 11
+   -
+     text :
+      en-GB : "..."
+     index : 12
+custom_note :
+ internal_properties : CAAAAAgAAAC68/W0/adbG0nFCRhrE42B5HRnbDzVHaz86sSQyxlBk7I=
+rad :
+ internal_properties : CAAAAAgAAABoAN7PLpwJW3EiA7WVZdCA5EwrCA1rvutcDHooMWKe

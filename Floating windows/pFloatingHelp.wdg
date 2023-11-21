@@ -1,0 +1,346 @@
+#To edit and compare internal_properties, use WINDEV integrated tools.
+#Internal properties refer to the properties of controls in windows, reports, etc.
+info :
+ name : pFloatingHelp
+ major_version : 28
+ minor_version : 0
+ type : 7
+ description : ""
+ subtype : 0
+procedure_set :
+ identifier : 0x18735e1f00a8948e
+ internal_properties : CAAAAAgAAABGLu41kG7fjQV3iS4F72qmnKaNh5694reolNKIW0iw
+ code_elements :
+  internal_properties : CAAAAAgAAAAorH3KwXuH29nk/Y5sN5J3DUWZN6sSr/tqN6D3iUl34WYrucAbiuMajmzkEineopG+nBOoKRG0FAFLVFHHu3o0MP4hEVBQhqpA
+  type_code : 31
+  p_codes :
+   -
+     internal_properties : CAAAAAgAAABTJQpxtU5G5n98nzp8R7i5e40MfOit05PH6nuYqCVvN7G01uDb+HmNmLMz9BAeZc4fagrA0NQWOErx1OnkbBo4UZWoP3lo7Fzwsm54+r6UXo+9nIdO13obXHwJ4Psdk3hpmQuF5qcemlx+r/Q=
+     code : |1-
+      //
+      //List of Structures
+      //
+      //The FloatingHelp component proposes a structure:
+      //
+      //FloatingHelp  Structure used to configure a floating help
+      //
+      //
+      //List of procedures/functions
+      //
+      //The FloatingHelp component proposes several functions:
+      //
+      //FloatingHelpDisplay  Displays a floating help according to the specified parameters
+      //FloatingHelpClose  Closes a floating help
+      //FloatingHelpProgressBar  Modifies the progress bar in a Progress Bar floating help
+      //FloatingHelpReset  Resets the display parameters customized by the user
+      //
+      //
+      //
+      //
+      //Structures
+      //
+      //FloatingHelp structure
+      //
+      //The FloatingHelp structure is used to configure a floating help. This structure is used by FloatingHelpDisplay.
+      //
+      //Members:
+      //
+      //<nType>: Integer constant
+      //	Type of the floating help. This member can take one of the following values:
+      //	- fhStandard  Type of floating help: Standard (title + text). 
+      //	- fhProgressBar  Type of floating help: Progress bar (title + progress bar)
+      //	- fhLink  Type of floating help: Link (title + link) 
+      //
+      //	The afStandard type will be used by default if this member is not specified.
+      //
+      //<sTitle>: Character string
+      //Title of the floating help (up to 60 characters). The title of the application will be used if this member is not specified or if it is an empty string ("").
+      //
+      //<sText>: Character string
+      //Text to display (up to 64 characters). This member is ignored if <nType> is set to afProgressBar.
+      //
+      //<nClosingTimeout>: Integer
+      //Timeout (in seconds) after which the help will be automatically closed. This member is ignored if <nType> is set to afProgressBar (the help will be closed when the progress bar reaches the upper bound)
+      //
+      //<sIcon>: Character string
+      //Path of the icon to display. The default icon will be used if this member is not specified or if it corresponds to an empty string ("")
+      //
+      //<bTransparentIcon>: Boolean
+      //True if the icon must be displayed in transparency, False otherwise (by default)
+      //
+      //<bSoundEnabled>: Boolean
+      //True if a sound must be emitted when the help is opened, False otherwise (default value)
+      //
+      //<sParentWindow>: Character string
+      //Name of the WinDev window or title of the application where the help must be opened. The help is opened on the desktop if this member is not specified or if it is equal to an empty string ("").
+      //
+      //<sCallbackProcedure>: Character string
+      //Name of the procedure to call when the link is clicked. This member is ignored if <nType> is set to afProgressBar or afStandard.
+      //
+      //
+      //Example:
+      //
+      //	// Declares a FloatingHelp structure
+      //	MyHelp is pFloatingHelp.FloatingHelp
+      //
+      //	// Fill the structure
+      //	MyHelp:nType = pFloatingHelp.afStandard
+      //	MyHelp:sTitle = "Emails"
+      //	MyHelp:sText = "You have 5 new messages"
+      //	MyHelp:bTransparentIcon = False
+      //	MyHelp:bSoundEnabled = False
+      //
+      
+      // Type of Display
+      constant
+      	afStandard = 1 // Standard
+      	afProgBar = 2 // With progress bar
+      	afLink = 3 // With link
+      end
+      
+      FloatingHelp is Structure
+      	nType is 2-byte int
+      	sText is string on 64
+      	sTitle is string on 64
+      	sIcon is string on 260
+      	bTransparentIcon is boolean 
+      	bSoundEnabled is boolean
+      	nClosingTimeout is 4-byte int
+      	sParentWindow is string on 256
+      	vHandleParentWindow is variant
+      	sCallbackProcedure is string on 256
+      end
+      
+      RESTRICTED
+      constant
+      	cbSzFloatingHelp = 951
+      end
+      
+      // Registry Key
+      gsRegistryKey is string = ProjectInfo(piRegistry) + <§@12165bd2002fd1f50004§>
+      
+      // Creates the registry key for saving the parameters
+      RegistryCreateKey(gsRegistryKey)
+     type : 720896
+  procedures :
+   -
+     name : FloatingHelpDisplay
+     internal_properties : CAAAAAgAAADZq6EVFJhYm/cJE1iBarEGKbZi0Ax8bN7RWU6FszXi4xMwyQVLeg0CUfX+RDjkoZBsXNgk63k7F1BECbEFa61eaayi6EIUXUwMiygAL8AB0ed6/3Dy+dNxnJS2PwOCt7e43VyfSq8KZbhsjiKSIorWqlIwOvJp0XZumsS5B+ki8mDtd91gYvsj9Ds9FjmRSGMqZVZPLPz5W3UsTFbU07d6yXu/UDN1HYGtSNpQV8KBEVGmSg==
+     procedure_id : 1761855366480106638
+     type_code : 15
+     code : |1-
+      // Summary: Displays the floating window
+      // Syntax:
+      //[ <Result> = ] FloatingHelpDisplay (<stFloatingHelpParameter> is FloatingHelp)
+      //
+      // Parameters:
+      //	stFloatingHelpParameter (FloatingHelp): FloatingHelp structure used to describe the floating help. See the documentation about the component for more details
+      // Return value:
+      // 	boolean: True if the floating help was displayed, False otherwise
+      
+      PROCEDURE FloatingHelpDisplay(LOCAL stFloatingHelpParameter is FloatingHelp)
+      
+      vHandleParentWindow is variant
+      stFloatingHelp is FloatingHelp
+      
+      
+      WHEN EXCEPTION
+      	ExceptionEnable()
+      	RESULT False
+      END
+      
+      // Checks whether it is a FloatingHelp structure 
+      //	(compare the size of the structure passed in parameter to the size of the FloatingHelp structure)
+      IF Dimension(stFloatingHelpParameter) <> cbSzFloatingHelp THEN
+      	ExceptionThrow(1, StringBuild(<§@12165bd2002fd1f50000§>, Dimension(stFloatingHelpParameter)))		
+      END
+      
+      // Retrieves the parameters
+      stFloatingHelp = stFloatingHelpParameter
+      
+      //
+      // CHECK THE PARAMETERS
+      //
+      
+      SWITCH stFloatingHelp:nType
+      	// Known type
+      	CASE afStandard, afProgBar, afLink
+      		// No action
+      		
+      	// Unknown type
+      	OTHER CASE
+      		// Back to default mode
+      		stFloatingHelp:nType = afStandard			
+      END
+      
+      // Default title if no title was specified
+      IF stFloatingHelp:sTitle ~= "" THEN stFloatingHelp:sTitle = ProjectInfo(piProjectName)
+      
+      WHEN EXCEPTION IN
+      	
+      	SWITCH True
+      		CASE stFloatingHelp:sParentWindow ~= ""
+      			vHandleParentWindow = ""
+      			
+      		// If it's a handle of WinDev window
+      		CASE Handle(stFloatingHelp:sParentWindow) <> 0
+      			vHandleParentWindow = Handle(stFloatingHelp:sParentWindow)
+      			
+      		// If it's a handle of non-WinDev window
+      		CASE SysWinHandle(stFloatingHelp:sParentWindow) <> 0
+      			vHandleParentWindow = SysWinHandle(stFloatingHelp:sParentWindow)
+      			
+      		OTHER CASE
+      			vHandleParentWindow = ""
+      	END
+      	
+      DO
+      	vHandleParentWindow = ""
+      END
+      
+      stFloatingHelp:vHandleParentWindow = vHandleParentWindow
+      
+      //
+      // OPEN THE FLOATING HELP
+      //
+      
+      // If the window is already opened
+      IF WinStatus(WIN_FHStandard) <> NotFound THEN
+      	
+      	// Re-applies the parameters to the existing window
+      	WIN_FHStandard.gFloatingHelp = stFloatingHelp
+      	WIN_FHStandard..Plane = stFloatingHelp:nType
+      	
+      	// Reinitializes the controls
+      	WIN_FHStandard.ControlsInit()
+      	
+      	// Reinitializes the closing timeout
+      	DelayBeforeClosing(WIN_FHStandard, WIN_FHStandard.BTN_CLOSE, 0)		
+      	IF stFloatingHelp:nType <> afProgBar THEN DelayBeforeClosing(WIN_FHStandard, WIN_FHStandard.BTN_CLOSE, stFloatingHelp:nClosingTimeout)
+      	
+      ELSE
+      	
+      	// Opens the window
+      	OpenChild("WIN_FHStandard"+NoFocus, stFloatingHelp)
+      	
+      END
+      
+      RESULT True
+     type : 458752
+   -
+     name : FloatingHelpProgressBar
+     internal_properties : CAAAAAgAAAA++nM8PpfNqbt/to12fscnDO3nlstkwBCOMMAzThgWx3ZlZssnUydsFpreVfPizkuvyr4/YXAhb2wf5AAD8Sh2FBKcAJ9LUfO1ChaPcdaefGPakp/Sr/kHB4BXAS6EA/2uMSTJkBatLKmBbAtC6qA3veTDDW8u6QrvL1GTHoxHdWVjKnAsk8t+eqNfbZk=
+     procedure_id : 1761855366480172174
+     type_code : 15
+     code : |1-
+      // Summary: Refreshes the progress bar of the floating help window
+      // Syntax:
+      //[ <Result> = ] FloatingHelpProgressBar (<nValue> is int [, <nMaxValue> is int])
+      //
+      // Parameters:
+      //	nValue (integer): 	Value of the progress bar
+      //	nMaxValue (integer - default value=100): Maximum value of the progress bar
+      // Return value:
+      // 	boolean: 	True if the progress bar was updated, False otherwise
+      // Automatic process of errors: RETURN FALSE
+      //
+      
+      PROCEDURE FloatingHelpProgressBar(LOCAL nValue is int, LOCAL nMaxValue is int = 100)
+      
+      // If the window exists...
+      IF WinStatus(WIN_FHStandard) <> NotFound THEN
+      	
+      	// .. and if it is a Progress Bar window
+      	IF WIN_FHStandard.gFloatingHelp:nType = afProgBar THEN
+      		// Displays the progress bar
+      		WIN_FHStandard.SetProgressBar(nValue, nMaxValue)
+      		Multitask(-1)
+      	ELSE
+      		RESULT False
+      	END
+      	
+      ELSE
+      	RESULT False
+      END
+      
+      // The progress bar is refreshed, returns true
+      RESULT True
+     type : 458752
+   -
+     name : FloatingHelpClose
+     procedure_id : 1761855366480237710
+     type_code : 15
+     code : |1-
+      // Summary: Closes the floating help window
+      // Syntax:
+      //[ <Result> = ] FloatingHelpClose ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	boolean: True if the floating help was closed, False otherwise
+      
+      PROCEDURE FloatingHelpClose()
+      
+      // If the window exists
+      IF WinStatus(WIN_FHStandard) <> NotFound THEN
+      	// Closes the window
+      	Close(WIN_FHStandard)
+      	RESULT True
+      END
+      
+      // Window not found, returns FALSE
+      RESULT False
+     type : 458752
+   -
+     name : FloatingHelpReset
+     procedure_id : 1761855366480303246
+     type_code : 15
+     code : |1-
+      // Summary: Resets the parameters of the floating help
+      // Syntax:
+      // FloatingHelpReset ()
+      //
+      // Parameters:
+      //	None
+      // Return value:
+      // 	None
+      
+      PROCEDURE FloatingHelpReset()
+      
+      // Deletes the values from the registry key
+      RegistryDeleteValue(gsRegistryKey, "DisplayNone")
+      RegistryDeleteValue(gsRegistryKey, "BlockLastY")
+     type : 458752
+  procedure_templates : []
+  property_templates : []
+ code_parameters :
+  internal_properties : CAAAAAgAAACVGQgYbalU7DKC3oH4ItDrjtcTHXXV/EuH8q0IbhyQlw==
+  original_name : pAideFurtive
+resources :
+ string_res :
+  identifier : 0x12165bd2002fd1f5
+  internal_properties : CAAAAAgAAACm76HWfKGWp33VjXInA4cRlqArlgTTA862QGt72W2ld5Y=
+  strings :
+   -
+     text :
+      en-GB : "The structure passed in parameter is incorrect.\r\n908 data bytes were expected while %1 were received."
+     index : 0
+   -
+     text :
+      en-GB : WIN_FHStandard
+     index : 1
+   -
+     text :
+      en-GB : DisplayNone
+     index : 2
+   -
+     text :
+      en-GB : BlockLastY
+     index : 3
+   -
+     text :
+      en-GB : \Help
+     index : 4
+custom_note :
+ internal_properties : CAAAAAgAAABtB9HWVzrXO2+4NDRVK0vmzaNKrCKqH1DBX30lMmGZ
